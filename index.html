@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grade calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+ <h1>Grade Calculator</h1>
+
+<body>
+
+
+<table cellpadding="8">
+
+    <tr>
+        <th></th>
+        <th> Grades (%)</th>
+        <th>Grade Weight (%)</th>
+    </tr>
+    <tr id = "hw">
+        <td> Homework </td>
+        <td><input type="text" id="homework" value="90, 100, 85, 92, 89, 72" size="50"></td>
+        <td><input type="text" id="homeworkWeight" value="10" size="50"></td>
+    </tr>
+    <tr id = "quiz">
+        <td> Quizzes </td>
+        <td><input type="text" id="quizzes" value="75, 69, 84, 90, 86" size="50"></td>
+        <td><input type="text" id="quizzesWeight" value="25" size="50"></td>
+    </tr>
+    <tr id = "test">
+        <td> Tests </td>
+        <td><input type="text" id="tests" value="81, 65, 78, 94, 79" size="50"></td>
+        <td><input type="text" id="testsWeight" value="50" size="50"></td>
+    </tr>
+    <tr id = "mid">
+        <td> Midterm </td>
+        <td><input type="text" id="midterm" value="89" size="50"></td>
+        <td><input type="text" id="midtermWeight" value="15" size="50"></td>
+    </tr>
+</table>
+
+
+<p><button id="Button1" onclick="calculateCurrentGrade()">Calculate Current Grade</button>
+<div id="output"></div></p>
+
+
+
+<div id=”Div1”>Your Final Exam is <input type="number" id="examWeight" value="" size="25">% of your grade.</div>
+<p><div id=”Div2”>You want (at least) a <input type="number" id="preferredScore" value="" size="25">% in the class.</div></p>
+<button id="Button2" onclick="calculateGradeNeeded()">Calculate Final Exam Grade Needed</button>
+<div id="output1"></div>
+
+</body>
+</html>

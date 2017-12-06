@@ -1,0 +1,9 @@
+table, th, td{
+    border: 2px black solid;
+    border-collapse: collapse;
+}
+
+body {
+    background: #e8dde9;
+    font-family: "Al Nile";
+}
